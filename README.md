@@ -16,6 +16,54 @@ Aplikasi ini dilengkapi dengan antarmuka berbasis **Streamlit** yang memungkinka
 
 ---
 
+#Teknologi yang Digunakan
+- **Python 3.7+**
+- **Sckit-learn**
+- **Imbalanced-learn (SMOTE)**
+- **Streamlit**
+
+---
+
+## Cara Menjalankan Proyek
+
+1. **Clone repository** ini ke lokal Anda:
+   ```bash
+   git clone https://github.com/username/repository-name.git
+2. **Masuk ke Direktori Proyek**
+   ```bash
+   cd repository-name
+3. **Install Semua Dependensi**
+   ```bash
+   pip install -r requirements.txt
+4. **Jalankan Aplikasi Streamlit**
+   ```bash
+   streamlit run streamlit_app.py
+
+---
+
+## Input Data
+
+| Fitur         | Deskripsi               | Contoh Nilai        |
+|---------------|-------------------------|---------------------|
+| Varietas      | Jenis varietas padi     | Inpari 42, Siam-Siam|
+| Panjang       | Panjang padi (cm)       | 9.5                 |
+| Bentuk        | Bentuk gabah            | Bulat, Panjang      |
+| Warna         | Warna gabah             | Putih, Merah        |
+| Rasa          | Rasa nasi               | Pulen, Kurang Pulen |
+| Teknik        | Teknik tanam            | Konvensional        |
+| Musim         | Musim tanam             | Hujan, Kemarau      |
+| Hama          | Jenis hama              | Wereng Hijau        |
+| pH            | Tingkat keasaman tanah  | 6.5                 |
+
+---
+
+## Hasil Prediksi
+
+- Kualitas Bagus: Model memprediksi bahwa kualitas tanaman padi baik.
+- Kualitas Kurang Bagus: Model memprediksi kualitas tanaman padi tidak memenuhi standar.
+
+---
+
 ## Struktur Direktori
 ```plaintext
 ├── data.xlsx                 # Dataset tanaman padi
@@ -28,3 +76,4 @@ Aplikasi ini dilengkapi dengan antarmuka berbasis **Streamlit** yang memungkinka
 ├── streamlit_app.py          # Aplikasi Streamlit untuk prediksi
 ├── ChiSquare_NaiveBayes.ipynb # Notebook pelatihan model
 ├── requirements.txt          # Daftar dependensi
+
